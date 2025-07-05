@@ -34,11 +34,14 @@ header{
 }
 
 .sidebar{
-    width: 196px
+    max-width: 196px;
+    flex: 1;
 }
 
 .product{
+    max-width: 1076px;
     padding: 0 12px;
+    flex: 3;
 }
 
 .card-row{
@@ -121,7 +124,7 @@ header{
 }
 
 .menu-link{
-    width: 172px;
+    max-width: 172px;
     display: block;
     text-decoration: none;
     color: #212529;
@@ -184,6 +187,7 @@ header{
 }
 
 footer{
+    max-width: 100vw;
     background: #F8F9FA;
 }
 
