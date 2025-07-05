@@ -123,6 +123,14 @@ header{
     width: 100%;
 }
 
+.card-img-link:hover img{
+    opacity: 80%;
+}
+
+.card-img-link:focus img{
+    border: 1px solid #212529;
+}
+
 .menu-link{
     max-width: 172px;
     display: block;
@@ -160,6 +168,9 @@ header{
 }
 
 .page-link:hover{
+    background-color: #F8F9FA;
+}
+.page-link:focus{
     background-color: #C0FA73;
 }
 
