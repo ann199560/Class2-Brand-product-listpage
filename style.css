@@ -339,3 +339,15 @@ footer{
 }
 
 /* 間隔排列設定*/
+
+@media (max-width: 992px){
+    .col{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .col{
+        max-width: 100%;
+    }
+}
