@@ -1,0 +1,209 @@
+body{
+    font-family:'Noto Sans TC', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 0.05em;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+h1,h2,h3{
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+p,li{
+	line-height: 1.5;
+	color: #212529;
+}
+
+.d-f{
+	display: flex;
+}
+
+.jcc{
+	justify-content: center;
+}
+
+.aic{
+	align-items: center;
+}
+
+
+.container{
+	max-width: 1076px;
+	margin: 0 auto;
+}
+
+header{
+	background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	height: 400px;
+}
+
+.header_content{
+	text-align: center;
+}
+
+.heading2{
+	font-size: 24px;
+}
+
+.header_title{
+	font-size: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+.header_title_en{
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+.slogan{
+	margin: 0 auto;
+	max-width: 856px;
+	text-align: center;
+	padding: 32px;
+	background: #F5FEE7;
+}
+
+.highlight{
+	font-size: 20px;
+	color: #57A203;
+}
+
+.about{
+	margin: 0 auto;
+	max-width: 1076px;
+}
+
+.about img{
+	width: 100%;
+}
+
+.about_content{
+	margin: 0 auto;
+	max-width: 856px;
+	border-bottom: 1px solid #DEE2E6;
+}
+
+.history{
+	margin: 0 auto;
+	max-width: 856px;
+}
+
+.history_content{
+	border-bottom: 1px solid #DEE2E6;
+}
+
+.history_list{
+	list-style-type: disc;
+	list-style-position: inside;
+	text-indent: 0.5em;
+}
+
+.history_content .history_list::marker{
+	font-size: 10px;
+}
+
+.spirit{
+	max-width: 856px;
+	margin: 0 auto;
+}
+
+.spirit_list{
+	border-left: 3px solid #DEE2E6;
+	padding-left: 12px;
+}
+
+.spirit_content{
+	border-bottom: 1px solid #DEE2E6;
+}
+
+.story{
+	margin: 0 auto;
+	max-width: 856px;
+	border-bottom: 1px solid #DEE2E6;
+}
+
+.story_link{
+	text-decoration: none;
+	padding: 8px 0;
+}
+
+.arrow{
+	margin: 2.5px;
+	color: #57A203;
+}
+
+.story_text{
+	padding-bottom: 4px;
+	border-bottom: 1px solid #57A203;
+	color: #57A203;
+	margin-left: 8px;
+}
+
+.story_link:hover{
+	background-color: #F5FEE7;
+	cursor: pointer; /* 滑鼠變小手 */
+}
+
+/* 可以被點擊的才能加:active，所以只能放 a 的 class，後面則是被指定物件：連結被點擊後，後面指定物件要做ＸＸ事 */
+.story_link:active .story_text{
+	color: #477A11;
+	border-bottom: 1px solid #477A11;
+}
+
+/* .arrow 是 svg，不吃 color，所以加 path 和改 fill */
+.story_link:active .arrow path{
+	fill: #477A11;
+}
+
+.footer{
+	background: #F8F9FA;
+}
+
+.copyright{
+	text-align: center;
+}
+
+.mg-b_4px{
+	margin-bottom: 4px;
+}
+
+.mg-b_12px{
+	margin-bottom: 12px;
+}
+
+.mg-b_16px{
+	margin-bottom: 16px;
+}
+
+.mg-b_24px{
+	margin-bottom: 24px;
+}
+
+.mg-b_48px{
+	margin-bottom: 48px;
+}
+
+.pd-64px{
+padding: 64px;
+}
+
+.pd-b_48px{
+	padding-bottom: 48px;
+}
+
+.pd-tb_64px{
+	padding: 64px 0;
+}
