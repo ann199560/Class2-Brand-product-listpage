@@ -1,0 +1,77 @@
+/* 容器設定*/
+
+.product-gallery{
+    max-width: 746px;
+    flex: 5.5;
+}
+
+.product-info{
+    
+    flex: 4.5;
+}
+
+.pd-gallery-col{
+    width: 48%;
+}
+
+.related-products{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+.related-pds-col{
+    width: 25%;
+}
+
+/* 容器設定*/
+/* 各 class 設定*/
+
+.pd-img{
+    width: 100%;
+}
+
+.related-pds-img{
+    width: 100%;
+}
+
+.breadcrumb .list {
+  color: #6C757D;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb .list:hover,
+.breadcrumb .list:focus {
+  color: #495057;
+}
+
+/* 目前頁面狀態 */
+.breadcrumb .current {
+  color: #212529;
+  font-weight: 700;
+  pointer-events: none; /* 禁用點擊 */
+  cursor: default;
+}
+
+.breadcrumb .slash {
+  color: #DEE2E6;
+}
+
+/* 各 class 設定*/
+
+@media (max-width: 992px){
+    .related-pds-col{
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    
+    .pd-gallery-col{
+        width: 100%;
+    }
+
+    .related-pds-col{
+        width: 100%;
+    }
+}

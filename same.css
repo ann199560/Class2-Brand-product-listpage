@@ -1,0 +1,178 @@
+/* 全域統一設定*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    letter-spacing: 0.05em;
+    color: #212529;
+    line-height: 1.5;
+}
+
+h2,h3,h4,h5,h6{
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+
+/* 全域統一設定*/
+/* 間隔排列設定*/
+
+.d-f{
+    display: flex;
+}
+
+.f-w{
+    flex-wrap: wrap;
+}
+
+.jcc{
+    display: flex;
+    justify-content: center;
+}
+
+.aic{
+    display: flex;
+    align-items: center;
+}
+
+.jcsb{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gap{
+    gap: 24px;
+}
+
+.pt32{
+    padding-top: 32px;
+}
+
+.pt48{
+    padding-top: 48px;
+}
+
+.pb80{
+    padding-bottom: 80px;
+}
+
+.pb88{
+    padding-bottom: 88px;
+}
+
+.ptb7{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.ptb16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.ptb12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.ptb24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.ptb64{
+    padding-top: 64px ;
+    padding-bottom: 64px;
+}
+
+.prl4{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.prl12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.pd10{
+    padding: 10px;
+}
+
+.pb24{
+    padding-bottom: 24px;
+}
+
+.mb4{
+    margin-bottom: 4px;
+}
+
+.mlfa{
+    margin-left: auto;
+}
+
+.mrl-4{
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.mrl-12{
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.mr8{
+    margin-right: 8px;
+}
+
+.mr12{
+    margin-right: 12px;
+}
+
+.mr24{
+    margin-right: 24px;
+}
+
+.mr40{
+    margin-right: 40px;
+}
+
+.mr48{
+    margin-right: 48px;
+}
+
+.mb12{
+    margin-bottom: 12px;
+}
+
+.mb16{
+    margin-bottom: 16px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mb24{
+    margin-bottom: 24px;
+}
+
+.mb32{
+    margin-bottom: 32px;
+}
+
+.mb48{
+    margin-bottom: 48px;
+}
+
+.bdt1{
+    border-top: 1px solid #DEE2E6;
+}
+
+/* 間隔排列設定*/

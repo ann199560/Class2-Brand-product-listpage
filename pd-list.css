@@ -1,26 +1,5 @@
 
-/* 全域統一設定*/
 
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
-
-body{
-    font-family: "Noto Sans TC", sans-serif;
-    letter-spacing: 0.05em;
-    color: #212529;
-    line-height: 1.5;
-}
-
-h2,h3,h4,h5,h6{
-    line-height: 1.2;
-    font-weight: 700;
-}
-
-
-/* 全域統一設定*/
 /* 容器設定*/
 
 header{
@@ -35,7 +14,7 @@ header{
 
 .sidebar{
     max-width: 196px;
-    flex: 1;
+    flex: 2;
 }
 
 .product{
@@ -57,6 +36,8 @@ header{
     max-width: 1296px;
     margin: 0 auto;
 }
+
+
 
 /* 容器設定*/
 /* 各 class 設定*/
@@ -82,8 +63,19 @@ header{
     z-index: -1;
 }
 
-.member-icon-link{
-    margin-left: auto;
+.nav-list{
+    color: #212529;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-list:hover{
+    color: #6C757D;
+}
+
+.nav-list:focus{
+    color: #212529;
+    border-bottom: 2px solid #212529;
 }
 
 .member-icon-link:hover .member-icon path{
@@ -94,18 +86,23 @@ header{
     fill: #6C757D;
 }
 
-.list{
-    color: #212529;
+.breadcrumb .current {
+  color: #212529;
+  pointer-events: none; /* 禁用點擊 */
+}
+
+.bread-list{
+    color: #6C757D;
     text-decoration: none;
     font-weight: 500;
 }
 
-.list:hover{
-    color: #6C757D;
+.bread-list:hover{
+    color: #57A203;
 }
 
-.list:focus{
-    color: #6C757D;
+.bread-list:focus{
+    color: #212529;
 }
 
 .slash{
@@ -139,12 +136,48 @@ header{
     font-weight: 500;
 }
 
+.menu-title {
+  all: unset;
+  cursor: pointer;
+  font-weight: 500;
+  color: #212529;
+  padding: 12px 0;
+}
+
+.mt-current{
+      all: unset;
+  cursor: pointer;
+  font-weight: 500;
+  color: #57A203;
+  padding: 12px 0;
+}
+
 .menu-link:hover{
     color: #57A203;
 }
 
 .menu-link:focus{
     color: #57A203;
+}
+
+.submenu {
+  display: none;
+  padding-left: 0;
+}
+
+.menu-group.active .submenu {
+  display: block;
+}
+
+.submenu-link {
+  display: block;
+  color: #6C757D;
+  padding: 4px 0;
+  text-decoration: none;
+}
+
+.submenu-link:hover {
+  color: #57A203;
 }
 
 .price{
@@ -161,6 +194,10 @@ header{
     padding: 8px 15px;
     text-decoration: none;
     color: #212529;
+}
+
+.pg-current{
+    background-color: #C0FA73
 }
 
 .arrow:hover path{
@@ -229,116 +266,7 @@ footer{
     text-align: center;
 }
 
-/* 間隔排列設定*/
 
-.d-f{
-    display: flex;
-}
-
-.f-w{
-    flex-wrap: wrap;
-}
-
-.jcc{
-    display: flex;
-    justify-content: center;
-}
-
-.aic{
-    display: flex;
-    align-items: center;
-}
-
-.jcsb{
-    display: flex;
-    justify-content: space-between;
-}
-
-.pt32{
-    padding-top: 32px;
-}
-
-.ptb7{
-    padding: 7px 0;
-}
-
-.ptb16{
-    padding: 16px 0;
-}
-
-.ptb12{
-    padding: 12px 0;
-}
-
-.ptb24{
-    padding: 24px 0;
-}
-
-.ptb32{
-    padding: 32px 0;
-}
-
-.ptb64{
-    padding: 64px 0;
-}
-
-.pd10{
-    padding: 10px;
-}
-
-.pb24{
-    padding-bottom: 24px;
-}
-
-.mb4{
-    margin-bottom: 4px;
-}
-
-.mr8{
-    margin-right: 8px;
-}
-
-.mr12{
-    margin-right: 12px;
-}
-
-.mr24{
-    margin-right: 24px;
-}
-
-.mr40{
-    margin-right: 40px;
-}
-
-.mr48{
-    margin-right: 48px;
-}
-
-.mb12{
-    margin-bottom: 12px;
-}
-
-.mb16{
-    margin-bottom: 16px;
-}
-
-.mb24{
-    margin-bottom: 24px;
-}
-
-.mb32{
-    margin-bottom: 32px;
-}
-
-.mb48{
-    margin-bottom: 48px;
-}
-
-.bdt1{
-    border-top: 1px solid #DEE2E6;
-}
-
-/* 間隔排列設定*/
 
 @media (max-width: 992px){
     .col{
