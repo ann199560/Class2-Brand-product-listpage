@@ -22,6 +22,26 @@ h2{
     font-size: 32px;
 }
 
+h5{
+    font-size: 20px;
+    color: #57A203;
+}
+
+.sm{
+    font-weight: 400;
+    font-size: 14;
+}
+
+.graytxt{
+    color: #ADB5BD;
+}
+
+
+.redtxt{
+    color: #D74F4F;
+}
+
+
 /* 全域統一設定*/
 /* 間隔排列設定*/
 
@@ -109,6 +129,10 @@ h2{
 
 .mb4{
     margin-bottom: 4px;
+}
+
+.mb8{
+    margin-bottom: 8px;
 }
 
 .mlfa{

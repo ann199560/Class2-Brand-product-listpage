@@ -67,6 +67,72 @@
   color: #DEE2E6;
 }
 
+
+
+.size-group input[type="radio"] {
+  display: none;
+}
+
+.size-group label {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #212529;
+  font-weight: 500;
+}
+
+.size-group input[type="radio"]:checked + label {
+  border: 1px solid #212529;
+}
+
+.size-group label:hover {
+   border: 1px solid #212529;
+}
+
+.size-group label.disabled {
+    cursor: not-allowed;
+    opacity: 40%;
+}
+
+.cimg{
+    width: 64px;
+}
+
+.colortxt{
+    color: #6C757D;
+    font-weight: 500;
+}
+
+/* 隱藏原生 radio */
+.color-img input[type="radio"] {
+  display: none;
+}
+
+/* label 結構對齊、滑鼠樣式 */
+.color-img label {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* hover 時圖片透明度降低 */
+.color-img label:hover img.cimg {
+  opacity: 0.8;
+}
+
+/* 選中時圖片加黑框 */
+.color-img input[type="radio"]:checked + label .cimg {
+  border: 2px solid #212529;
+}
+
+/* 選中時文字變黑 */
+.color-img input[type="radio"]:checked + label .colortxt {
+  color: #212529;
+}
+
 .related-pds-img{
     width: 100%;
     height: auto;
@@ -103,4 +169,5 @@
     .related-pds-col{
         width: 100%;
     }
+
 }
