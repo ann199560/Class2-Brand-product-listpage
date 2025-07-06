@@ -18,6 +18,9 @@ h2,h3,h4,h5,h6{
     font-weight: 700;
 }
 
+h2{
+    font-size: 32px;
+}
 
 /* 全域統一設定*/
 /* 間隔排列設定*/
@@ -43,11 +46,6 @@ h2,h3,h4,h5,h6{
 .jcsb{
     display: flex;
     justify-content: space-between;
-}
-
-
-.gap{
-    gap: 24px;
 }
 
 .pt32{

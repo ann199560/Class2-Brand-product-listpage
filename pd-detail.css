@@ -2,12 +2,12 @@
 
 .product-gallery{
     max-width: 746px;
-    flex: 5.5;
+    flex: 1.5;
 }
 
 .product-info{
-    
-    flex: 4.5;
+    max-width: 526px;
+    flex: 1;
 }
 
 .pd-gallery-col{
@@ -23,6 +23,10 @@
     width: 25%;
 }
 
+.product-info{
+    max-width: 526px;
+}
+
 /* 容器設定*/
 /* 各 class 設定*/
 
@@ -34,23 +38,29 @@
     width: 100%;
 }
 
-.breadcrumb .list {
-  color: #6C757D;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.breadcrumb .list:hover,
-.breadcrumb .list:focus {
-  color: #495057;
-}
-
-/* 目前頁面狀態 */
 .breadcrumb .current {
   color: #212529;
-  font-weight: 700;
   pointer-events: none; /* 禁用點擊 */
-  cursor: default;
+}
+
+.bread-list{
+    color: #6C757D;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.bread-list:hover{
+    color: #57A203;
+}
+
+.bread-list:focus{
+    color: #212529;
+}
+
+.slash{
+    font-weight: 700;
+    letter-spacing: 0em;
+    color: #DEE2E6;
 }
 
 .breadcrumb .slash {
@@ -60,15 +70,19 @@
 /* 各 class 設定*/
 
 @media (max-width: 992px){
+
     .related-pds-col{
         width: 50%;
+    }
+    .bread-list{
+
     }
 }
 
 @media (max-width: 767px){
     
     .pd-gallery-col{
-        width: 100%;
+        width: 95%;
     }
 
     .related-pds-col{
