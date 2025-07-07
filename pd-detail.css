@@ -74,8 +74,10 @@
 }
 
 .size-group label {
+  width: 160px;
   display: inline-block;
-  padding: 12px 24px;
+  text-align: center;
+  padding: 12px 0;
   border: 1px solid #ced4da;
   border-radius: 4px;
   cursor: pointer;
@@ -132,6 +134,86 @@
 .color-img input[type="radio"]:checked + label .colortxt {
   color: #212529;
 }
+
+.save{
+    display: block;
+    width: 259px;
+    padding: 12px 0;
+    background: none;
+    border: 1px solid #212529;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.save:hover{
+    cursor: pointer;
+    background: #212529;
+}
+
+.save:hover .love path{
+    fill: #FFFFFF;
+}
+.save:hover .lovetxt{
+    color: #FFFFFF;
+}
+
+.save:focus{
+    background: #212529;
+}
+
+.save:focus .love path{
+    fill: #FFFFFF;
+}
+.save:focus .lovetxt{
+    color: #FFFFFF;
+}
+
+.save:disabled {
+  border: 1px solid rgba(33, 37, 41, 0.4); /* 原本是 #212529，透明度 40% */
+  cursor: not-allowed;
+}
+.save:disabled .love path{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.reserve{
+    display: block;
+    width: 259px;
+    padding: 12px 0;
+    background: #212529;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.reserve:hover{
+    background: #495057;
+    cursor: pointer;
+}
+
+.reserve:focus{
+    box-shadow: 0 0 0 3px rgba(33,37,41, 0.1);
+}
+
+.reserve:disabled {
+  background: #212529;
+  opacity: 40%;
+  cursor: not-allowed;
+}
+
+.reserve:disabled .love path{
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.related-pds-title{
+    padding: 9.5px 0;
+}
+
 
 .related-pds-img{
     width: 100%;
