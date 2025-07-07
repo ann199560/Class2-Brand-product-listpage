@@ -137,7 +137,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    transition: 1s ease;  /* 動畫時間 */
+    transition: 0.1s ease;  /* 動畫時間 */
 }
 
 .card-img-link:hover .related-pds-img{
@@ -145,8 +145,10 @@
 }
 
 .related-pds-img.shrink {
-  width: 80%;
+  width: 95%;
 }
+
+
 
 /* 各 class 設定*/
 
