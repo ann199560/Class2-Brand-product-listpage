@@ -18,7 +18,7 @@
     <ul class="d-f aic">
     <li>
     <h1>
-    <a href="#" class="logo mr48">
+    <a href="/index.html" class="logo mr48">
     <svg class="logo-circle"width="8" height="8"viewBox="0 0 8 8"fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="4" cy="4" r="4" fill="#C0FA73"/>
 </svg>
@@ -108,7 +108,7 @@
                 <article class="d-f f-w card-row">
                     <div class="col mb48">
                     <div class="card">
-                        <a href="#" class="card-img-link">
+                        <a href="/pd-detail.html" class="card-img-link">
                         <img class="cardimg mb12" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true" alt="product1">
                         </a>
                         <h6 class="mb4">PLATFORM 404</h6>
@@ -258,18 +258,23 @@ document.querySelectorAll('.menu-title').forEach((btn) => {
 
 // 點擊圖片 → 縮小 → 自動恢復
   document.querySelectorAll('.card-img-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault(); // 防止跳轉
+  link.addEventListener('click', (e) => {
+    e.preventDefault(); // 暫停立即跳轉
+    const img = link.querySelector('.cardimg');
 
-      const img = link.querySelector('.cardimg');
-      img.classList.add('shrink');
+    img.classList.add('shrink');
 
-      // 1 秒後自動移除 shrink class
+    // 150ms 後移除縮小動畫 → 還原大小
+    setTimeout(() => {
+      img.classList.remove('shrink');
+
+      // 再過 150ms → 跳轉頁面
       setTimeout(() => {
-        img.classList.remove('shrink');
-      }, 100); // 100 毫秒（和 CSS transition 對齊）
-    });
+        window.location.href = link.href;
+      }, 150);
+    }, 150);
   });
+});
   </script>
   
 </html>

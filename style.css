@@ -74,6 +74,7 @@ header{
 	text-align: center;
 	padding: 32px;
 	background: #F5FEE7;
+	border-radius: 12px;
 }
 
 .highlight{
